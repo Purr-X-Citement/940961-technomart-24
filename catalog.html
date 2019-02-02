@@ -8,10 +8,10 @@
 
   	<header class="main-header">
     	<div class="header-top">
-    	    <a class="logo" href="index.html" title="Техномарт"><img src="img/logo.svg" width="111" height="18" alt="Техномарт"></a>
+    	    <a class="logo" href="index.html" title="Техномарт"><img src="img/logo.svg" width="111" height="18" alt="Логотип магазина «Техномарт»"></a>
     	    <form action="/" method="post" class="header__search-form">
-    		   <input type="search" name="search-form" class="header__search-form-input" placeholder="Поиск:">
-    		   <button type="submit" name="submit-btn" class="header__search-form-button"></button>
+    		   <input type="search" name="search-form" class="header__search-form-input" placeholder="Поиск:" aria-label="Кнопка поиска">
+    		   <button type="submit" name="submit-btn" class="header__search-form-button"  aria-label="Кнопка поиска"></button>
     	    </form>
     	    <a class="header__user-button" href="#" title="Закладки:">
                 <img src="img/icon-bookmark.svg" alt="Закладки" width="15" height="15">
@@ -29,7 +29,7 @@
         <div class="header-center">
         	<p class="header_shop-main-title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
         	<div class="header_adress">
-        		<a class="header_adress-tel-number" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        		<a class="header_adress-tel-number" href="tel:+78125550555" aria-label="Номер телефона магазина">+7 (812) 555-05-55</a>
         		<p class="header_adress-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         	</div>
             <div class="header_user-info">
@@ -98,32 +98,46 @@
     	<h1 class="page-title">Перфораторы</h1>
 
     	<form action="/" method="post" class="catalog-filter">
-    		<h2 class="catalog-filter_title">Фильтр:</h2>
-    		<h3 class="catalog-filter_section-title">Цена:</h3>
-    		<h3 class="catalog-filter_section-title">Производители:</h3>
-    		<label>
-            <input type="checkbox" name="check-option1" checked>Bosch
-        </label>
-    		<label>
-            <input type="checkbox" name="check-option2">Интерскол
-        </label>
-    		<label>
-            <input type="checkbox" name="check-option3" checked>Makita
-        </label>
-    		<label>
-            <input type="checkbox" name="check-option4">Dewalt
-         </label>
-    		<label>
-            <input type="checkbox" name="check-option5">Hitachi
-        </label>
-    		<h3 class="catalog-filter_section-title">Питание:</h3>
-    		<label>
-            <input type="radio" name="charge" value="option1">Аккумуляторы
-        </label>
-    		<label>
-            <input type="radio" name="charge" value="option2">Сетевые
-        </label>
-    		<button type="submit">Показать</button>
+    		<h3 class="catalog-filter_title">Фильтр:</h3>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <div class="catalog-filter-price">
+    		    <h4 class="catalog-filter_section-title">Цена:</h4>
+            <img src="img/filter-button.svg" width="20" height="22" alt="Ползунок">
+            <div class="catalog-filter-price_graystripe"></div>
+            <div class="catalog-filter-price_greenstripe"></div>
+            <img src="img/filter-button.svg" width="20" height="22" alt="Второй ползунок">
+            <p class="catalog-filter-price-range">
+              <span class="price-range">0</span> — <span class="price-range">30000</span>
+            </p>
+          </div>
+          <fieldset class="catalog-filter-fieldset">
+    		    <legend class="catalog-filter_section-title">Производители:</legend>
+    		    <label>
+                <input type="checkbox" name="check-option1" checked>Bosch
+            </label>
+    		    <label>
+                <input type="checkbox" name="check-option2">Интерскол
+            </label>
+    		    <label>
+                <input type="checkbox" name="check-option3" checked>Makita
+            </label>
+    		    <label>
+                <input type="checkbox" name="check-option4">Dewalt
+             </label>
+    		    <label>
+                <input type="checkbox" name="check-option5">Hitachi
+            </label>
+          </fieldset>
+          <fieldset class="catalog-filter-fieldset">
+    		    <legend class="catalog-filter_section-title">Питание:</legend>
+    		    <label>
+                <input type="radio" name="charge" value="option1">Аккумуляторы
+            </label>
+    		    <label>
+              <input type="radio" name="charge" value="option2">Сетевые
+            </label>
+          </fieldset>
+    		  <button class="catalog-button" type="submit">Показать</button>
     	</form>
 
     	<section class="catalog">
@@ -258,10 +272,10 @@
      			</li>
     		</ul>
             <ul class="catalog-pagination-list">
-                <li class="atalog-pagination-item pagination-item-current"><a>1</a></li>
-                <li class="atalog-pagination-item"><a href="#">2</a></li>
-                <li class="atalog-pagination-item"><a href="#">3</a></li>
-                <li class="atalog-pagination-item"><a href="#">Следующая</a></li>
+                <li class="catalog-button catalog-pagination-item pagination-item-current"><a>1</a></li>
+                <li class="catalog-button catalog-pagination-item"><a href="#">2</a></li>
+                <li class="catalog-button catalog-pagination-item"><a href="#">3</a></li>
+                <li class="catalog-button catalog-pagination-item"><a href="#">Следующая</a></li>
             </ul>
     	</section>
         <article class="main_perforator-article">
@@ -273,7 +287,7 @@
 
     <footer class="main-footer">
     	<div class="footer-top">
-    		<a class="logo" href="index.html" title="Техномарт"><img src="img/logo.svg" width="111" height="18" alt="Техномарт"></a>
+    		<a class="logo" href="index.html" title="Техномарт"><img src="img/logo.svg" width="111" height="18" alt="Логотип магазина «Техномарт»"></a>
             <ul class="footer-nav">
                 <li>
                     <a href="about-us.html" title="Компания">Компания</a>
@@ -293,7 +307,7 @@
             </ul>
     		<div class="footer-adress">
         		<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        		<a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        		<a href="tel:+78125550555"  aria-label="Номер телефона магазина">+7 (812) 555-05-55</a>
         	</div>
      		<ul class="footer-nav">
                <li>
@@ -316,23 +330,33 @@
             <p class="footer-copyright"> Все права защищены</p>
     	    <ul class="footer-social">
      		    <li>
-                    <a class="social-button" href="#" title="Вконтакте">Вконтакте</a>
-                </li>
+                <a class="social-button" href="#" title="Вконтакте">Вконтакте</a>
+            </li>
      		    <li>
-                    <a class="social-button" href="#" title="Фейсбук">Фейсбук</a>
-                </li>
+                <a class="social-button" href="#" title="Фейсбук">Фейсбук</a>
+            </li>
      		    <li>
-                    <a class="social-button" href="#" title="Инстаграм">Инстаграм</a>
-                </li>
+                <a class="social-button" href="#" title="Инстаграм">Инстаграм</a>
+            </li>
      	    </ul>
     		<div class="footer-bottom_academy">Обратная связь:
-                 <a class="footer-bottom_academy-link" href="send-mail.html" title="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </div>
+              <a class="footer-bottom_academy-link" href="send-mail.html" title="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+         </div>
     		<div class="footer-bottom_academy">Разработано: 
-                <a class="footer-bottom_academy-link" href="https://htmlacademy.ru" title="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-            </div>
+            <a class="footer-bottom_academy-link" href="https://htmlacademy.ru" title="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        </div>
     	</div>
     </footer>
+
+    <section class="modal modal-cart">
+      <div class="modal-cart-text">
+        <img src="img/added-to-cart.svg" width="66" height="66" alt="">
+        Товар добавлен в корзину!
+      </div>
+      <a class="button" href="order-form.html" alt="Оформить заказ">Оформить заказ</a> 
+      <button class="button" type="button">Продолжить покупки</button>
+      <button class="close-button" type="button">Закрыть</button>
+    </section>
 
   </body>
 </html>
