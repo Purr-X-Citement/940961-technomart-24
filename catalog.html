@@ -106,9 +106,9 @@
             <div class="catalog-filter-price_graystripe"></div>
             <div class="catalog-filter-price_greenstripe"></div>
             <img src="img/filter-button.svg" width="20" height="22" alt="Второй ползунок">
-            <p class="catalog-filter-price-range">
-              <span class="price-range">0</span> — <span class="price-range">30000</span>
-            </p>
+            <div class="catalog-filter-price-range">
+              <input type="text" name="min-price" class="price-range" value="0"> — <input type="text" name="max-price" class="price-range" value="30000">
+            </div>
           </div>
           <fieldset class="catalog-filter-fieldset">
     		    <legend class="catalog-filter_section-title">Производители:</legend>
@@ -348,7 +348,7 @@
     	</div>
     </footer>
 
-    <section class="modal modal-cart">
+    <section class="modal modal-cart" id="modalcart_catalog">
       <div class="modal-cart-text">
         <img src="img/added-to-cart.svg" width="66" height="66" alt="">
         Товар добавлен в корзину!
