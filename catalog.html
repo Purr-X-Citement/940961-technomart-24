@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -56,43 +59,43 @@
         <nav class="main-nav">
             <ul class="main-nav_list">
         		<li class="main-nav_list-item">
-                    <a href="index.html" class="main-nav__list-item-link" title="Главная">Главная</a>
-                </li>
+                <a href="index.html" class="main-nav__list-item-link" title="Главная">Главная</a>
+            </li>
         		<li class="main-nav_list-item">
-                    <a href="about-us.html" class="main-nav__list-item-link" title="Компания">Компания</a>
-                </li>
+                <a href="about-us.html" class="main-nav__list-item-link" title="Компания">Компания</a>
+            </li>
         		<li class="main-nav_list-item">
-                    <a href="catalog.html" class="main-nav__list-item-link" title="Каталог">Каталог</a>
-                </li>
+                <a href="catalog.html" class="main-nav__list-item-link" title="Каталог">Каталог</a>
+            </li>
      		    <li class="main-nav_list-item">
-                    <a href="news.html" class="main-nav__list-item-link" title="Новости">Новости</a>
-                </li>
+                <a href="news.html" class="main-nav__list-item-link" title="Новости">Новости</a>
+            </li>
      		    <li class="main-nav_list-item">
-                    <a href="special.html" class="main-nav__list-item-link" title="Спецпредложения">Спецпредложения</a>
-                </li>
+                <a href="special.html" class="main-nav__list-item-link" title="Спецпредложения">Спецпредложения</a>
+            </li>
      		    <li class="main-nav_list-item">
-                    <a href="delivery.html" class="main-nav__list-item-link" title="Доставка">Доставка</a>
-                </li>
+                <a href="delivery.html" class="main-nav__list-item-link" title="Доставка">Доставка</a>
+            </li>
      		    <li class="main-nav_list-item">
-                    <a href="contacts.html" class="main-nav__list-item-link" title="Контакты">Контакты</a>
-                </li>
+                <a href="contacts.html" class="main-nav__list-item-link" title="Контакты">Контакты</a>
+            </li>
             </ul>
-        </nav>
+        </
     </header>
 
     <main class="container">
     	<ul class="breadcrumps">
     		<li class="breadcrumbs__item">
-                <a href="index.html" class="breadcrumbs__item-link" title="Главная">
-                    <img src="img/icon-home.svg" width="14" height="12" alt="Главная">
-                </a>
-            </li>
+            <a href="index.html" class="breadcrumbs__item-link" title="Главная">
+                <img src="img/icon-home.svg" width="14" height="12" alt="Главная">
+            </a>
+        </li>
     		<li class="breadcrumbs__item">
-                <a href="#" class="breadcrumbs__item-link" title="Каталог">Каталог</a>
-            </li>
+            <a href="#" class="breadcrumbs__item-link" title="Каталог">Каталог</a>
+        </li>
     		<li class="breadcrumbs__item">
-                <a href="#" class="breadcrumbs__item-link" title="Инструмент">Инструмент</a>
-            </li>
+            <a href="#" class="breadcrumbs__item-link" title="Инструмент">Инструмент</a>
+        </li>
     		<li class="breadcrumps-current breadcrumbs__item">Перфораторы</li>
     	</ul>
     	<h1 class="page-title">Перфораторы</h1>
@@ -102,40 +105,40 @@
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <div class="catalog-filter-price">
     		    <h4 class="catalog-filter_section-title">Цена:</h4>
-            <img src="img/filter-button.svg" width="20" height="22" alt="Ползунок">
+            <img class="filter-button-first" src="img/filter-button.svg" width="20" height="22" alt="Ползунок">
             <div class="catalog-filter-price_graystripe"></div>
             <div class="catalog-filter-price_greenstripe"></div>
-            <img src="img/filter-button.svg" width="20" height="22" alt="Второй ползунок">
+            <img class="filter-button-second" src="img/filter-button.svg" width="20" height="22" alt="Второй ползунок">
             <div class="catalog-filter-price-range">
               <input type="text" name="min-price" class="price-range" value="0"> — <input type="text" name="max-price" class="price-range" value="30000">
             </div>
           </div>
           <fieldset class="catalog-filter-fieldset">
     		    <legend class="catalog-filter_section-title">Производители:</legend>
-    		    <label>
-                <input type="checkbox" name="check-option1" checked>Bosch
+    		    <label class="catalog-filter_brand-name">
+                <input type="checkbox" name="check-option1" class="catalog-filter_brand-option" checked>Bosch
             </label>
-    		    <label>
-                <input type="checkbox" name="check-option2">Интерскол
+    		    <label class="catalog-filter_brand-name">
+                <input type="checkbox" name="check-option2" class="catalog-filter_brand-option">Интерскол
             </label>
-    		    <label>
-                <input type="checkbox" name="check-option3" checked>Makita
+    		    <label class="catalog-filter_brand-name">
+                <input type="checkbox" name="check-option3" class="catalog-filter_brand-option" checked>Makita
             </label>
-    		    <label>
-                <input type="checkbox" name="check-option4">Dewalt
+    		    <label class="catalog-filter_brand-name">
+                <input type="checkbox" name="check-option4" class="catalog-filter_brand-option">Dewalt
              </label>
-    		    <label>
-                <input type="checkbox" name="check-option5">Hitachi
+    		    <label class="catalog-filter_brand-name">
+                <input type="checkbox" name="check-option5" class="catalog-filter_brand-option">Hitachi
             </label>
           </fieldset>
           <fieldset class="catalog-filter-fieldset">
     		    <legend class="catalog-filter_section-title">Питание:</legend>
-    		    <label>
-                <input type="radio" name="charge" value="option1">Аккумуляторы
+    		    <label class="catalog-filter_charge-name">
+                <input type="radio" name="charge" value="option1" class="catalog-filter_charging-option">Аккумуляторы
             </label>
     		    <label>
-              <input type="radio" name="charge" value="option2">Сетевые
-            </label>
+              <input type="radio" name="charge" value="option2" class="catalog-filter_charging-option">Сетевые
+            </label class="catalog-filter_charge-name">
           </fieldset>
     		  <button class="catalog-button" type="submit">Показать</button>
     	</form>
@@ -144,22 +147,15 @@
     		<h2 class="visually-hidden">Список товаров</h2>
             <div class="catalog-sort">
                 <h3 class="catalog-sort-title">Сортировка:</h3>
-                <form>
-                  <input type="radio" name="sort1" id="sortprice" checked>
-                  <input type="radio" name="sort1" id="sorttype">
-                  <input type="radio" name="sort1" id="sortfunc">
-                  <input type="radio" name="sort2" id="upsort" checked>
-                  <input type="radio" name="sort2" id="downsort">
-                  <label for="sortprice">По цене</label>
-                  <label for="sorttype">По типу</label>
-                  <label for="sortfunc">По функционалу</label>
-                  <label for="upsort">
+                  <a href="#" title="По цене" class="catalog-sort_js-button">По цене</a>
+                  <a href="#" title="По типу" class="catalog-sort_js-button">По типу</a>
+                  <a href="#" title="По функционалу" class="catalog-sort_js-button">По функционалу</a>
+                  <a href="/" title="По возрастанию" class="catalog-sort_js-button">
                     <img src="icon-up-dir.svg" width="9" height="9" alt="По возрастанию">
-                  </label>
-                  <label for="downsort">
+                  </a>
+                  <a href="/" title="По убыванию" class="catalog-sort_js-button">
                     <img src="icon-down-dir.svg" width="9" height="9" alt="По убыванию">
-                  </label>
-                </form>
+                  </a>
             </div>
     		<ul class="catalog-list">
     			<li class="catalog-item">
