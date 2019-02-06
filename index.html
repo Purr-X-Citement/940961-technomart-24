@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -11,22 +10,24 @@
 
     <header class="main-header">
     	<div class="header-top">
-    	    <a class="logo" href="index.html" title="Техномарт"><img src="img/logo.svg" width="111" height="18" alt="Логотип магазина «Техномарт»"></a>
-    	    <form action="/" method="post" class="header__search-form">
-    		   <input type="search" name="search-form" class="header__search-form-input" placeholder="Поиск:" aria-label="Кнопка поиска">
-           <button type="submit" name="submit-btn" class="header__search-form-button" aria-label="Кнопка поиска"></button>
-    	    </form>
-    	    <a class="header__user-button" href="#" title="Закладки">
-            <img src="img/icon-bookmark.svg" alt="Закладки" width="15" height="15">
-            <span class="header__user-button-text">Закладки: </span>
-            <output>0</output>
-          </a>
-          <a class="header__user-button" href="#" title="Корзина">
-            <img src="img/cart-icon.svg" alt="Корзина" width="15" height="15">
-            <span class="header__user-button-text">Корзина: </span>
-            <output>0</output>
-          </a>
-          <a class="header__order-button" href="order-form.html" title="Оформить заказ">Оформить заказ</a>
+        <div class="container">
+    	      <a class="logo" href="index.html" title="Техномарт"><img src="img/logo.svg" width="111" height="18" alt="Логотип магазина «Техномарт»"></a>
+    	      <form action="/" method="post" class="header__search-form">
+    		     <input type="search" name="search-form" class="header__search-form-input" placeholder="Поиск:" aria-label="Кнопка поиска">
+             <button type="submit" name="submit-btn" class="header__search-form-button" aria-label="Кнопка поиска"></button>
+    	      </form>
+    	      <a class="header__user-button" href="#" title="Закладки">
+              <img src="img/icon-bookmark.svg" alt="Закладки" width="15" height="15">
+              <span class="header__user-button-text">Закладки: </span>
+              <output>0</output>
+            </a>
+            <a class="header__user-button" href="#" title="Корзина">
+              <img src="img/cart-icon.svg" alt="Корзина" width="15" height="15">
+              <span class="header__user-button-text">Корзина: </span>
+              <output>0</output>
+            </a>
+            <a class="header__order-button" href="order-form.html" title="Оформить заказ">Оформить заказ</a>
+          </div>
         </div>
 
         <div class="header-center">
@@ -220,6 +221,7 @@
       </section>
 
       <section class="main_service">
+        <div class="container">
           <h2 class="main_service-title">Сервисы</h2>
           <p class="main_service-description">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <ul class="main_service-list">
@@ -254,6 +256,7 @@
                   </div>
               </li>
           </ul>
+        </div>
       </section>
 
       <section class="main_information">
@@ -320,24 +323,26 @@
       </div>
 
       <div class="footer-bottom">
-        <p class="footer-copyright">© 2010-2019 Компания «Техномарт» </p>
+        <div class="container">
+          <p class="footer-copyright">© 2010-2019 Компания «Техномарт» </p>
             <p class="footer-copyright"> Все права защищены</p>
-          <ul class="footer-social">
-            <li>
-                <a class="social-button" href="#" title="Вконтакте">Вконтакте</a>
-            </li>
-            <li>
-                <a class="social-button" href="#" title="Фейсбук">Фейсбук</a>
-            </li>
-            <li>
-                <a class="social-button" href="#" title="Инстаграм">Инстаграм</a>
-            </li>
-          </ul>
-        <div class="footer-bottom_academy">Обратная связь:
-            <a class="footer-bottom_academy-link" href="send-mail.html" title="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <div class="footer-bottom_academy">Разработано: 
-            <a class="footer-bottom_academy-link" href="https://htmlacademy.ru" title="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            <ul class="footer-social">
+              <li>
+                  <a class="social-button" href="#" title="Вконтакте">Вконтакте</a>
+              </li>
+              <li>
+                  <a class="social-button" href="#" title="Фейсбук">Фейсбук</a>
+              </li>
+              <li>
+                  <a class="social-button" href="#" title="Инстаграм">Инстаграм</a>
+              </li>
+            </ul>
+          <div class="footer-bottom_academy">Обратная связь:
+              <a class="footer-bottom_academy-link" href="send-mail.html" title="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="footer-bottom_academy">Разработано: 
+              <a class="footer-bottom_academy-link" href="https://htmlacademy.ru" title="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          </div>
         </div>
       </div>
     </footer>
@@ -357,15 +362,21 @@
           <textarea class="mail-form-textarea" rows="3" id="mail-text" placeholder="В свободной форме"></textarea>
         </div>
         <div class="form-block form-block-full form-block__button">
-          <button class="button" type="submil">Отправить</button>
+          <button class="button" type="submil">
+            <span class="send-button-text">Отправить</span>
+          </button>
         </div>
       </form>
-      <button class="close-button" type="button">Закрыть</button>
+      <button class="close-button" type="button">
+        <span class="close-button-text">Закрыть</span>
+      </button>
     </section>
 
     <section class="modal modal-map" id="map_index">
       <img src="img/map.jpg" width="940" height="446" alt="Офис компании знаходится по адресу ул. Большая Конюшенная 19/8, город Санкт-Петербург">
-      <button class="close-button" type="button">Закрыть</button>
+      <button class="close-button" type="button">
+        <span> class="close-button-text"Закрыть</span>
+      </button>
     </section>
 
   </body>

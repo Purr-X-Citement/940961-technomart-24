@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -11,6 +10,7 @@
 
   	<header class="main-header">
     	<div class="header-top">
+        <div class="container">
     	    <a class="logo" href="index.html" title="Техномарт"><img src="img/logo.svg" width="111" height="18" alt="Логотип магазина «Техномарт»"></a>
     	    <form action="/" method="post" class="header__search-form">
     		   <input type="search" name="search-form" class="header__search-form-input" placeholder="Поиск:" aria-label="Кнопка поиска">
@@ -28,6 +28,7 @@
             </a>
     	    <a class="header__order-button" href="order-form.html" title="Оформить заказ">Оформить заказ</a>
         </div>
+      </div>
 
         <div class="header-center">
         	<p class="header_shop-main-title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
@@ -80,10 +81,10 @@
                 <a href="contacts.html" class="main-nav__list-item-link" title="Контакты">Контакты</a>
             </li>
             </ul>
-        </
+        </nav>
     </header>
 
-    <main class="container">
+    <main>
     	<ul class="breadcrumps">
     		<li class="breadcrumbs__item">
             <a href="index.html" class="breadcrumbs__item-link" title="Главная">
@@ -101,7 +102,7 @@
     	<h1 class="page-title">Перфораторы</h1>
 
     	<form action="/" method="post" class="catalog-filter">
-    		<h3 class="catalog-filter_title">Фильтр:</h3>
+    		<h3 class="catalog-filter-title">Фильтр:</h3>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <div class="catalog-filter-price">
     		    <h4 class="catalog-filter_section-title">Цена:</h4>
@@ -136,11 +137,13 @@
     		    <label class="catalog-filter_charge-name">
                 <input type="radio" name="charge" value="option1" class="catalog-filter_charging-option">Аккумуляторы
             </label>
-    		    <label>
+    		    <label class="catalog-filter_charge-name">
               <input type="radio" name="charge" value="option2" class="catalog-filter_charging-option">Сетевые
             </label class="catalog-filter_charge-name">
           </fieldset>
-    		  <button class="catalog-button" type="submit">Показать</button>
+    		  <button class="catalog-button" type="submit">
+            <span class="catalog-button-text">Показать</span>
+          </button>
     	</form>
 
     	<section class="catalog">
@@ -268,16 +271,18 @@
      			</li>
     		</ul>
             <ul class="catalog-pagination-list">
-                <li class="catalog-button catalog-pagination-item pagination-item-current"><a>1</a></li>
-                <li class="catalog-button catalog-pagination-item"><a href="#">2</a></li>
-                <li class="catalog-button catalog-pagination-item"><a href="#">3</a></li>
-                <li class="catalog-button catalog-pagination-item"><a href="#">Следующая</a></li>
+                <li class="catalog-pagination-item pagination-item-current"><a class="catalog-button">1</a></li>
+                <li class="catalog-pagination-item"><a href="#" class="catalog-button">2</a></li>
+                <li class="catalog-pagination-item"><a href="#" class="catalog-button">3</a></li>
+                <li class="catalog-pagination-item"><a href="#" class="catalog-button">Следующая</a></li>
             </ul>
     	</section>
         <article class="main_perforator-article">
+          <div class="container">
             <h2 class="main_perforator-article-title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
             <p class="main_perforator-article-text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
 Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+          </div>
         </article>
     </main>
 
@@ -322,24 +327,26 @@
     	</div>
 
     	<div class="footer-bottom">
-    		<p class="footer-copyright">© 2010-2019 Компания «Техномарт» </p>
-            <p class="footer-copyright"> Все права защищены</p>
-    	    <ul class="footer-social">
-     		    <li>
-                <a class="social-button" href="#" title="Вконтакте">Вконтакте</a>
-            </li>
-     		    <li>
-                <a class="social-button" href="#" title="Фейсбук">Фейсбук</a>
-            </li>
-     		    <li>
-                <a class="social-button" href="#" title="Инстаграм">Инстаграм</a>
-            </li>
-     	    </ul>
-    		<div class="footer-bottom_academy">Обратная связь:
-              <a class="footer-bottom_academy-link" href="send-mail.html" title="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-         </div>
-    		<div class="footer-bottom_academy">Разработано: 
-            <a class="footer-bottom_academy-link" href="https://htmlacademy.ru" title="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        <div class="container">
+    		  <p class="footer-copyright">© 2010-2019 Компания «Техномарт» </p>
+              <p class="footer-copyright"> Все права защищены</p>
+    	      <ul class="footer-social">
+     		      <li>
+                  <a class="social-button" href="#" title="Вконтакте">Вконтакте</a>
+              </li>
+     		      <li>
+                  <a class="social-button" href="#" title="Фейсбук">Фейсбук</a>
+              </li>
+     		      <li>
+                  <a class="social-button" href="#" title="Инстаграм">Инстаграм</a>
+              </li>
+     	      </ul>
+    		  <div class="footer-bottom_academy">Обратная связь:
+                <a class="footer-bottom_academy-link" href="send-mail.html" title="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+           </div>
+    		  <div class="footer-bottom_academy">Разработано: 
+              <a class="footer-bottom_academy-link" href="https://htmlacademy.ru" title="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          </div>
         </div>
     	</div>
     </footer>
@@ -350,8 +357,12 @@
         Товар добавлен в корзину!
       </div>
       <a class="button" href="order-form.html" alt="Оформить заказ">Оформить заказ</a> 
-      <button class="button" type="button">Продолжить покупки</button>
-      <button class="close-button" type="button">Закрыть</button>
+      <button class="button" type="button">
+        <span class="continue-button-text">Продолжить покупки</span>
+      </button>
+      <button class="close-button" type="button">
+        <span class="close-button-text">Закрыть</span>
+      </button>
     </section>
 
   </body>
