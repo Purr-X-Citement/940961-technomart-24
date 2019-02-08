@@ -545,6 +545,13 @@ a {
 	border: 1px solid #ee3643;
 }
 
+.active .catalog-button {
+	color: #ffffff;
+
+	background-color: #ee3643;
+	border: none;
+}
+
 .catalog-sort_js-button {
 	opacity: 0.3;
 

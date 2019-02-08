@@ -96,16 +96,22 @@
               <a class="main_products-menu_button" href="delivery.html" title="Доставка">Бесплатно</a>
           </div>
           <div class="main_products-menu_slider">
-            <input type="radio" name="slider1" id="drill-slide">
-            <label for="drill-slide" class=""><img src="img/icon-left.svg" height="40" width="22" alt="Стрелка влево"></label>
-            <div>
+            <!--
+            <img src="img/icon-left.svg" height="40" width="22" alt="Стрелка влево">
+            <img src="img/icon-right.svg" height="40" width="22" alt="Стрелка вправо">  -->
+            <button type="button" class="slide-left" aria-label="Стрелка влево"> < </button>
+            <button type="button" class="slide-right" aria-label="Стрелка вправо"> > </button>
+            <div class="slider-rounds">
+              <div class="round round1 active"></div>
+              <div class="round round2"></div>
+            </div>
+
+            <div class="slide drill-slide">
                 <h3 class="main_products-menu_slider-title">Дрели</h3>
                 <p class="main_products-menu_slider-description">Соседям на радость!</p>
                 <img src="img/drill.jpg" width="620" height="266" alt="Дрели">
             </div>
-            <input type="radio" name="slider1" id="perforator-slide">
-            <label for="perforator-slide" class=""><img src="img/icon-right.svg" height="40" width="22" alt="Стрелка вправо"></label>
-            <div>
+            <div class="slide perforator-slide">
                 <h3 class="main_products-menu_slider-title">Перфораторы</h3>
                 <p class="main_products-menu_slider-description">Настоящие мужские игрушки</p>
                 <img src="img/perforator.jpg" width="620" height="266" alt="Перфораторы">
