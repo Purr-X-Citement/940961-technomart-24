@@ -30,7 +30,7 @@
           </div>
         </div>
 
-        <div class="header-center">
+        <div class="header-center container">
         	<h1 class="header_shop-main-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         	<div class="header_adress">
             <a class="header_adress-tel-number" href="tel:+78125550555" aria-label="Номер телефона магазина">+7 (812) 555-05-55</a>
@@ -40,7 +40,7 @@
         	<a class="sign-up-button" href="sign-up.html" title="Регистрация">Регистрация</a>
         </div>
 
-        <nav class="main-nav">
+        <nav class="main-nav container">
           <ul class="main-nav_list">
             <li class="main-nav_list-item">
                 <a href="index.html" class="main-nav__list-item-link" title="Главная">Главная</a>
@@ -67,13 +67,13 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container">
       <div class="main_products-menu">
           <div class="main_products-menu_item products-menu_materials">
               <h3 class="main_products-menu_item-title">Материалы</h3>
               <img src="img/icon-1.svg" width="44" height="65" alt="Материалы">
               <a class="main_products-menu_button" href="materials.html" title="Материалы">На любой вкус</a>
-              <img src="img/new-flag.svg" class="new-flag" width="20" height="20" alt="Новый товар">
+              <img src="img/new-flag.png" class="new-flag" width="60" height="60" alt="Новый товар">
           </div>
           <div class="main_products-menu_item products-menu_tools">
               <h3 class="main_products-menu_item-title">Инструмент</h3>
@@ -172,7 +172,7 @@
                     <a class="catalog-user-buy-button" href="#" title="Купить">Купить</a>
                     <a class="catalog-user-bookmark-button" href="#" title="В закладки">В закладки</a>
                 </div>
-                <img src="img/new-flag.svg" class="new-flag" width="20" height="20" alt="Новый товар">
+                <img src="img/new-flag.png" class="new-flag" width="60" height="60" alt="Новый товар">
             </li>
         </ul>
       </section>
@@ -231,6 +231,7 @@
           <h2 class="main_service-title">Сервисы</h2>
           <p class="main_service-description">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <ul class="main_service-list">
+            <div class="main_service-stripe"></div>
               <li class="main_service-list-item">
                   <input type="radio" name="slider2" id="delivery-slide">
                   <label for="delivery-slide" class="main_service-label">Доставка</label>
@@ -289,7 +290,7 @@
     </main>
 
     <footer class="main-footer">
-      <div class="footer-top">
+      <div class="footer-top container">
         <a class="logo" href="index.html" title="Техномарт"><img src="img/logo.svg" width="111" height="18" alt="Логотип магазина «Техномарт»"></a>
             <ul class="footer-nav">
                 <li>
@@ -334,13 +335,19 @@
             <p class="footer-copyright"> Все права защищены</p>
             <ul class="footer-social">
               <li>
-                  <a class="social-button" href="#" title="Вконтакте">Вконтакте</a>
+                  <a class="social-button" href="#" title="Вконтакте" aria-label="Наша страница Вконтакте">
+                    <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
+                  </a>
               </li>
               <li>
-                  <a class="social-button" href="#" title="Фейсбук">Фейсбук</a>
+                  <a class="social-button" href="#" title="Фейсбук" aria-label="Наша страница в Фейсбуке">
+                    <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
+                  </a>
               </li>
               <li>
-                  <a class="social-button" href="#" title="Инстаграм">Инстаграм</a>
+                  <a class="social-button" href="#" title="Инстаграм" aria-label="Наш профиль в Инстаграме">
+                    <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">
+                  </a>
               </li>
             </ul>
           <div class="footer-bottom_academy">Обратная связь:
@@ -373,16 +380,12 @@
           </button>
         </div>
       </form>
-      <button class="close-button" type="button">
-        <span class="close-button-text">Закрыть</span>
-      </button>
+      <button class="close-button" type="button" title="Закрыть"></button>
     </section>
 
     <section class="modal modal-map" id="map_index">
       <img src="img/map.jpg" width="940" height="446" alt="Офис компании знаходится по адресу ул. Большая Конюшенная 19/8, город Санкт-Петербург">
-      <button class="close-button" type="button">
-        <span class="close-button-text">Закрыть</span>
-      </button>
+      <button class="close-button" type="button" title="Закрыть"></button>
     </section>
 
   </body>
