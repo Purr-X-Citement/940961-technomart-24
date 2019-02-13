@@ -76,11 +76,27 @@ ul {
 }
 
 .main-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding-bottom: 60px;
+	margin-bottom: 59px;
+
 	background-color: #f4f7f9;
 }
 
 .header-top {
+	align-self: stretch;
+
 	background-color: #293449;
+}
+
+.header-top .container {
+    display: flex;
+    position: relative;
+    padding-left: 230px;
+    min-height: 42px;
 }
 
 .header-top .header__user-button,
@@ -104,6 +120,13 @@ ul {
   outline: none;
 
   width: 270px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 49px;
+
+  background-image: url("../img/icon-search-darkgrey.svg"); 
+  background-repeat: no-repeat;
+  background-position: 17px 12px;
 }
 
 .header-top .header__search-form-input::-webkit-input-placeholder {
@@ -123,14 +146,24 @@ ul {
 	display: none;
 }
 
-.header-top .header__user-button:hover,
 .header-top .header__search-form-input:hover {
 	background-color: #212a3a;
+	background-image: url("../img/icon-search-white.svg"); 
+    background-repeat: no-repeat;
+    background-position: 17px 12px;
 }
 
 .header-top .header__search-form-input:focus {
 	background-color: #ffffff;
 	color: #000000;
+
+	background-image: url("../img/icon-search-red.svg"); 
+    background-repeat: no-repeat;
+    background-position: 17px 12px;
+}
+
+.header-top .header__user-button:hover {
+	background-color: #212a3a;
 }
 
 .header-top .header__user-button:active {
@@ -151,6 +184,21 @@ ul {
 	color: rgba(255, 255, 255, 0.5);
 }
 
+.header-top .logo {
+	position: absolute;
+
+	top: 0;
+	left: 10px;
+
+	padding-left: 55px;
+	padding-right: 55px;
+	padding-top: 13px;
+	padding-bottom: 16px;
+
+    width: 220px;
+    height: 47px;
+}
+
 .logo {
 	display: block;
 
@@ -167,12 +215,19 @@ ul {
 	background-color: #ba2732;
 }
 
+.header-center {
+	display: flex;
+	align-items: center;
+}
+
 .header-center .header_shop-main-title {
-    font-size: 16px;
+	font-size: 16px;
     line-height: 23px;
     font-style: italic;
     font-weight: normal;
     color: #ee3643;
+
+    width: 196px;
 }
 
 .header-center .header_adress-tel-number {
@@ -228,6 +283,7 @@ ul {
 }
 
 .main-nav {
+
 	font-size: 17px;
 	line-height: 17px;
 }
@@ -254,7 +310,8 @@ ul {
 .main_products-menu_item-title {
     font-size: 24px;
     line-height: 30px;
-    font-weight: bold;
+    color: #ffffff;
+    font-weight: normal;
 }
 
 .main_products-menu_button {
