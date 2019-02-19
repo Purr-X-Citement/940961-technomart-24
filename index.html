@@ -13,20 +13,18 @@
         <div class="container">
     	      <a class="logo" href="index.html" title="Техномарт"><img src="img/logo.svg" width="111" height="18" alt="Логотип магазина «Техномарт»"></a>
     	      <form action="/" method="post" class="header__search-form">
-    		     <input type="search" name="search-form" class="header__search-form-input" placeholder="Поиск:" aria-label="Кнопка поиска">
+    		     <input type="text" name="search-form" class="header__search-form-input" placeholder="Поиск:" aria-label="Кнопка поиска">
              <button type="submit" name="submit-btn" class="header__search-form-button" aria-label="Кнопка поиска"></button>
     	      </form>
     	      <a class="header__user-button" href="#" title="Закладки">
-              <img src="img/icon-bookmark-darkgrey.svg" alt="Закладки" width="15" height="15">
-              <span class="header__user-button-text">Закладки: </span>
-              <output>0</output>
+              <img class="user-button-icon" src="img/icon-bookmark-darkgrey.svg" alt="Закладки" width="15" height="15">
+              <span class="header__user-button-text">Закладки: 0</span>
             </a>
             <a class="header__user-button" href="#" title="Корзина">
-              <img src="img/cart-icon-darkgrey.svg" alt="Корзина" width="15" height="15">
-              <span class="header__user-button-text">Корзина: </span>
-              <output>0</output>
+              <img class="user-button-icon" src="img/cart-icon-darkgrey.svg" alt="Корзина" width="15" height="15">
+              <span class="header__user-button-text">Корзина: 10</span>
             </a>
-            <a class="header__order-button" href="order-form.html" title="Оформить заказ">Оформить заказ</a>
+            <a class="header__user-button header__order-button" href="order-form.html" title="Оформить заказ">Оформить заказ</a>
           </div>
         </div>
 
@@ -36,8 +34,10 @@
             <a class="header_adress-tel-number" href="tel:+78125550555" aria-label="Номер телефона магазина">+7 (812) 555-05-55</a>
             <p class="header_adress-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
-        	<a class="sign-in-button" href="sign-in.html" title="Войти"><img src="img/icon-login.svg" alt="Войти" width="20" height="17">Войти</a>
-        	<a class="sign-up-button" href="sign-up.html" title="Регистрация">Регистрация</a>
+          <div class="header-login-buttons">
+        	  <a class="sign-in-button" href="sign-in.html" title="Войти"><img src="img/icon-login.svg" alt="Войти" width="20" height="17">Войти</a>
+        	  <a class="sign-up-button" href="sign-up.html" title="Регистрация">Регистрация</a>
+          </div>
         </div>
 
         <nav class="main-nav container">
@@ -129,7 +129,7 @@
             <li class="catalog-item">
                 <a href="catalog-item.html" class="catalog-item-title" title="Перфоратор BOSCH BFG 9000">Перфоратор BOSCH BFG 9000</a>
                 <a href="catalog-item.html" class="catalog-item-image">
-                    <img src="img/product-3.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 9000">
+                    <img src="img/product-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
                 </a>
                 <p class="catalog-item-old-price">32500 P.</p>
                 <a href="catalog-item.html" class="catalog-item-new-price" title="25500 P.">25500 P.</a>
@@ -141,7 +141,7 @@
             <li class="catalog-item">
                 <a href="catalog-item.html" class="catalog-item-title" title="Перфоратор BOSCH BFG 3000">Перфоратор BOSCH BFG 3000</a>
                 <a href="catalog-item.html" class="catalog-item-image">
-                    <img src="img/product-1.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 3000">
+                    <img src="img/product-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
                 </a>
                 <p class="catalog-item-old-price">22500 P.</p>
                 <a href="catalog-item.html" class="catalog-item-new-price" title="15500 P.">15500 P.</a>
@@ -153,7 +153,7 @@
             <li class="catalog-item">
                 <a href="catalog-item.html" class="catalog-item-title" title="Перфоратор BOSCH BFG 6000">Перфоратор BOSCH BFG 6000</a>
                 <a href="catalog-item.html" class="catalog-item-image">
-                    <img src="img/product-2.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 6000">
+                    <img src="img/product-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
                 </a>
                 <p class="catalog-item-old-price">30500 P.</p>
                 <a href="catalog-item.html" class="catalog-item-new-price" title="25500 P.">25500 P.</a>
@@ -165,7 +165,7 @@
             <li class="catalog-item">
                 <a href="catalog-item.html" class="catalog-item-title" title="Перфоратор BOSCH BFG 2000">Перфоратор BOSCH BFG 2000</a>
                 <a href="catalog-item.html" class="catalog-item-image">
-                    <img src="img/product-1.jpg" width="220" height="165" alt="Перфоратор BOSCH BFG 2000">
+                    <img src="img/product-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
                 </a>
                 <a href="catalog-item.html" class="catalog-item-new-price" title="12500 P.">12500 P.</a>
                 <div class="catalog-user-form-hidden">
@@ -280,10 +280,10 @@
     	  </div>
     	  <div class="main-contacts">
     		  <h2 class="main_information-title">Контакты</h2>
-    		  <p class="main_information-paragraph">Вы можете забрать товар сами, заехав в наш офис:</p>
-              <a class="main_information-map-small" href="#" title="Карта">
-                  <img src="img/map-small.jpg" width="300" height="158" alt="Карта">
-              </a>
+    		  <p class="main_information-paragraph">Вы можете забрать товар сами, <br> заехав в наш офис:</p>
+          <a class="main_information-map-small" href="#" title="Карта">
+              <img src="img/map-small.jpg" width="300" height="158" alt="Карта">
+          </a>
     		  <a class="button" href="send-mail.html" title="Заблудились? Напишите нам!">Заблудились? Напишите нам!</a>
     	  </div>
       </section>
@@ -291,60 +291,65 @@
 
     <footer class="main-footer">
       <div class="footer-top container">
-        <a class="logo" href="index.html" title="Техномарт"><img src="img/logo.svg" width="111" height="18" alt="Логотип магазина «Техномарт»"></a>
+        <div class="flex-container">
+            <a class="logo" href="index.html" title="Техномарт"><img src="img/footer-logo.svg" width="138" height="23" alt="Логотип магазина «Техномарт»"></a>
             <ul class="footer-nav">
-                <li>
-                    <a href="about-us.html" title="Компания">Компания</a>
+                <li class="footer-nav-item">
+                    <a href="about-us.html" class="footer-nav-link" title="Компания">Компания</a>
                 </li>
-                <li>
-                    <a href="news.html" title="Новости">Новости</a>
+                <li class="footer-nav-item">
+                    <a href="news.html" class="footer-nav-link" title="Новости">Новости</a>
                 </li>
-                <li>
-                    <a href="catalog.html" title="Каталог">Каталог</a>
+                <li class="footer-nav-item">
+                    <a href="catalog.html" class="footer-nav-link" title="Каталог">Каталог</a>
                 </li>
-                <li>
-                    <a href="delivery.html" title="Доставка">Доставка</a>
+                <li class="footer-nav-item">
+                    <a href="delivery.html" class="footer-nav-link" title="Доставка">Доставка</a>
                 </li>
-                <li>
-                    <a href="contacts.html" title="Контакты">Контакты</a>
+                <li class="footer-nav-item">
+                    <a href="contacts.html" class="footer-nav-link" title="Контакты">Контакты</a>
                 </li>
             </ul>
-        <div class="footer-adress">
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+        <div class="flex-container">
+          <div class="footer-adress">
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
             <a href="tel:+78125550555"  aria-label="Номер телефона магазина">+7 (812) 555-05-55</a>
+          </p>
           </div>
-        <ul class="footer-nav">
-            <li>
-                <a href="materials.html" title="Материалы">Материалы</a>
+          <ul class="footer-nav">
+            <li class="footer-nav-item">
+                <a href="materials.html" class="footer-nav-link" title="Материалы">Материалы</a>
             </li>
-            <li>
-                <a href="machinery.html" title="Техника">Техника</a>
+            <li class="footer-nav-item">
+                <a href="machinery.html" class="footer-nav-link" title="Техника">Техника</a>
             </li>
-            <li>
-                <a href="tools.html" title="Инструмент">Инструмент</a>
+            <li class="footer-nav-item">
+                <a href="tools.html" class="footer-nav-link" title="Инструмент">Инструмент</a>
             </li>
-            <li>
-                <a href="special.html" title="Спецпредложения">Спецпредложения</a>
+            <li class="footer-nav-item">
+                <a href="special.html" class="footer-nav-link" title="Спецпредложения">Спецпредложения</a>
             </li>
-        </ul>
+          </ul>
+        </div>
       </div>
 
       <div class="footer-bottom">
         <div class="container">
-          <p class="footer-copyright">© 2010-2019 Компания «Техномарт» </p>
-            <p class="footer-copyright"> Все права защищены</p>
+          <p class="footer-copyright">© 2010-2019 Компания «Техномарт» <br>
+           Все права защищены</p>
             <ul class="footer-social">
-              <li>
+              <li class="footer-social-item">
                   <a class="social-button" href="#" title="Вконтакте" aria-label="Наша страница Вконтакте">
                     <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
                   </a>
               </li>
-              <li>
+              <li class="footer-social-item">
                   <a class="social-button" href="#" title="Фейсбук" aria-label="Наша страница в Фейсбуке">
                     <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
                   </a>
               </li>
-              <li>
+              <li class="footer-social-item">
                   <a class="social-button" href="#" title="Инстаграм" aria-label="Наш профиль в Инстаграме">
                     <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">
                   </a>
@@ -353,7 +358,7 @@
           <div class="footer-bottom_academy">Обратная связь:
               <a class="footer-bottom_academy-link" href="send-mail.html" title="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
-          <div class="footer-bottom_academy">Разработано: 
+          <div class="footer-bottom_academy">Разработано —  
               <a class="footer-bottom_academy-link" href="https://htmlacademy.ru" title="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </div>
         </div>
