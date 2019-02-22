@@ -1354,13 +1354,13 @@ legend.catalog-filter_section-title::before {
 
 .modal {
 	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .modal-mail,
 .modal-cart {
-	left: 50%;
-
-	margin-left: -310px;
 	width: 620px;
 	padding-top: 48px;
 
@@ -1371,7 +1371,6 @@ legend.catalog-filter_section-title::before {
 }
 
 .modal-mail {
-	top: 486px;
 }
 
 .form-block-line {
@@ -1466,12 +1465,14 @@ legend.catalog-filter_section-title::before {
 }
 
 .modal-map {
-	top: 25px;
-	left: 50%;
-	margin-left: -470px;
+	display: none;
 	width: 940px;
 
 	box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.modal-map img {
+	display: block;
 }
 
 .form-block__button,
