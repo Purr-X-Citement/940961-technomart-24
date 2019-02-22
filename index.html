@@ -367,6 +367,7 @@
 
     <section class="modal modal-mail" id="mailform_index">
       <form class="mail-form" action="/" method="post">
+        <div class="form-block-line">
         <div class="form-block">
           <label class="mail-form-label" for="mail-form-name">Ваше имя:</label>
           <input class="half-size mail-form-input" type="text" name="name" placeholder="Имя Фамилия" id="mail-form-name">
@@ -375,13 +376,14 @@
           <label class="mail-form-label" for="mail-form-email">Ваш e-mail:</label>
           <input class="half-size mail-form-input" type="text" name="e-mail" placeholder="email@example.com" id="mail-form-email">
         </div>
+      </div>
         <div class="form-block form-block-full">
           <label class="mail-form-label" for="mail-text">Текст письма:</label>
-          <textarea class="mail-form-textarea" rows="3" id="mail-text" placeholder="В свободной форме"></textarea>
+          <textarea class="mail-form-textarea" rows="5" id="mail-text" placeholder="В свободной форме"></textarea>
         </div>
         <div class="form-block form-block-full form-block__button">
           <button class="button" type="submil">
-            <span class="button send-button-text">Отправить</span>
+            <span class="send-button-text">Отправить</span>
           </button>
         </div>
       </form>
