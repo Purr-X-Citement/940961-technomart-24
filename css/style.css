@@ -207,8 +207,10 @@ fieldset {
     background-position: 17px 12px;
 }
 
-.header__user-button:hover {
+.header__user-button:hover,
+.header__user-button:focus {
 	background-color: #212a3a;
+	outline: none;
 }
 
 .header__user-button:active {
@@ -216,11 +218,22 @@ fieldset {
 	color: rgba(255, 255, 255, 0.6);
 }
 
+.header__user-button:hover img,
+.header__user-button:focus img{
+	opacity: 1;
+}
+
+.header__user-button img,
+.header__user-button:active img{
+	opacity: 0.3;
+}
+
 .header__order-button {
 	background-color: #63a63e;
 }
 
-.header__order-button:hover {
+.header__order-button:hover,
+.header__order-button:focus {
 	background-color: #5fbb2d;
 }
 
@@ -230,6 +243,12 @@ fieldset {
 }
 
 .logo {
+	display: block;
+
+    width: 220px;
+    box-shadow: 0px 5px 0 0 #b52933;
+    background-color: #ee3643;
+
 	padding-left: 55px;
 	padding-right: 55px;
 	padding-top: 13px;
@@ -238,16 +257,10 @@ fieldset {
     width: 220px;
 }
 
-.logo {
-	display: block;
-
-    width: 220px;
-    box-shadow: 0px 5px 0 0 #b52933;
-    background-color: #ee3643;
-}
-
-.logo:hover {
+.logo:hover,
+.logo:focus {
 	background-color: #ca2c37;
+	outline: none;
 }
 
 .logo:active {
@@ -294,13 +307,6 @@ fieldset {
 	color: #32425c;
 }
 
-.header-login-buttons {
-}
-
-.sign-in-button{
-    margin-right: 10px;
-}
-
 .sign-in-button,
 .sign-up-button,
 .header_profile-button,
@@ -313,9 +319,22 @@ fieldset {
 	background-color: #ffffff;
 }
 
+.sign-in-button{
+    margin-right: 10px;
+    padding-left: 14px;
+    padding-right: 27px;
+}
+
+.sign-in-button svg {
+    margin-right: 14px;
+}
+
 .sign-in-button:hover,
-.sign-up-button:hover {
+.sign-up-button:hover,
+.sign-in-button:focus,
+.sign-up-button:focus {
 	color: #ee3643;
+	outline: none;
 }
 
 .sign-in-button:active,
@@ -323,9 +342,25 @@ fieldset {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.sign-in-button:hover polygon,
+.sign-in-button:hover path,
+.sign-in-button:focus polygon,
+.sign-in-button:focus path {
+	fill: #32425C;
+}
+
+.sign-in-button:active polygon,
+.sign-in-button:active path {
+	fill: #c5c5c5;
+}
+
 .header_profile-button {
 	padding-left: 13px;
 	padding-right: 27px;
+}
+
+.header_profile-button:focus {
+    outline: none;
 }
 
 .profile-button-icon {
@@ -352,6 +387,10 @@ fieldset {
 	padding-right: 10px;
 	padding-left: 10px;
 	padding-bottom: 12px;
+}
+
+.header_sign-out-button:focus {
+	outline: none;
 }
 
 .sign-out-button-icon {
@@ -402,6 +441,7 @@ fieldset {
 .header__user-info-list-item a:hover,
 .header__user-info-list-item a:focus {
 	color: #ee3643;
+	outline: none;
 }
 
 .header__user-info-list-item a:active {
@@ -440,12 +480,26 @@ fieldset {
 	padding-right: 55px;
 }
 
-.main-nav__list-item-link:hover {
+.main-nav__list-item-link:hover,
+.main-nav__list-item-link:focus {
 	background-color: #293449;
+	outline: none;
 }
 
 .main-nav__list-item-link:active {
 	background-color: #1d2739;
+}
+
+.main_products-menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.main_products-menu_item {
+	position: relative;
+
+	padding: 23px;
 }
 
 .main_products-menu_item-title {
@@ -453,13 +507,25 @@ fieldset {
     line-height: 30px;
     color: #ffffff;
     font-weight: normal;
+
+    margin: 0;
 }
 
 .main_products-menu_button {
+	display: block;
+
 	font-size: 14px;
     line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
     color: #ffffff;
+
     background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 135px;
 }
 
 .main_products-menu_button:hover {
@@ -508,6 +574,15 @@ fieldset {
 }
 
 .main-popular-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 30px;
+	padding-right: 24px;
+
     background-color: #f9f5f0;
 }
 
@@ -515,10 +590,19 @@ fieldset {
 	font-size: 30px;
 	line-height: 30px;
 	color: #32425c;
+	font-weight: normal;
     text-transform: uppercase;
+
+    margin: 0;
+}
+
+.main-popular-top .button {
+    width: 253px;
+    text-align: center;
 }
 
 .main_popular-list {
+	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
 }
@@ -530,8 +614,13 @@ fieldset {
 
 .main_popular-list .brands-item,
 .catalog-item {
-	display: block;
 	border: 1px solid #eaeaea;
+	margin-bottom: 20px;
+}
+
+.main_popular-list .brands-item:not(:nth-child(4)),
+.catalog-item:not(:nth-child(4)) {
+	margin-right: 20px;
 }
 
 .main_popular-list .brands-item:hover,
@@ -580,10 +669,16 @@ fieldset {
 }
 
 .catalog-item-old-price {
+	display: block;
+
 	font-size: 17px;
 	line-height: 18px;
 	color: #a9a9a9;
 	text-decoration: line-through;
+
+	margin-bottom: 0;
+	margin-left: 8px;
+	margin-top: 12px;
 }
 
 .catalog-item-new-price {
@@ -594,12 +689,18 @@ fieldset {
 	color: #ffffff;
 
     width: 141px;
-    margin: 10px auto;
+    margin-top: 10px;
+    margin-left: 42px;
+    margin-right: 35px;
     margin-bottom: 20px;
     padding: 11px 30px;
   
     background-color: #ee3643;
     border-radius: 3px;
+}
+
+.catalog-item-new-price:nth-child(3) {
+	margin-top: 40px;
 }
 
 .catalog-item-new-price::after {
@@ -989,7 +1090,7 @@ legend.catalog-filter_section-title::before {
 
 .filter-button-first {
 	position: absolute;
-	z-index: 10;
+	z-index: 2;
 	top: 30px;
 	left: 20px;
 }
@@ -1352,15 +1453,25 @@ legend.catalog-filter_section-title::before {
 	margin-right: 53px;
 }
 
+.modal-container {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3;
+
+	width: 100%;
+	height: 100%;
+	background-color: rgba(225, 0, 0, 0.3); 
+}
+
 .modal {
 	position: fixed;
 	left: 50%;
 	top: 50%;
+	z-index: 10000;
 	transform: translate(-50%, -50%);
-}
 
-.modal-mail,
-.modal-cart {
 	width: 620px;
 	padding-top: 48px;
 
@@ -1368,9 +1479,6 @@ legend.catalog-filter_section-title::before {
 
 	border-top: 7px solid #ee3643;
 	box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
-}
-
-.modal-mail {
 }
 
 .form-block-line {
@@ -1452,6 +1560,7 @@ legend.catalog-filter_section-title::before {
 
 .mail-form-textarea {
 	width: 100%;
+	resize: none;
 }
 
 .form-block__button {
@@ -1466,6 +1575,7 @@ legend.catalog-filter_section-title::before {
 
 .modal-map {
 	display: none;
+	padding-top: 0;
 	width: 940px;
 
 	box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.5);
@@ -1481,9 +1591,6 @@ legend.catalog-filter_section-title::before {
 	width: 100%;
 }
 
-.modal-cart {
-	top: 411px;
-}
 
 .modal-cart-top {
 	display: flex;
