@@ -607,6 +607,18 @@ fieldset {
 	list-style: none;
 }
 
+.main_popular-list .brands-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 220px;
+	margin-top: 20px;
+}
+
+.main_popular-list .brands-item img {
+	margin: 24px auto;
+}
+
 .main_popular-list .brands-item img,
 .catalog-item img {
     display: block;
@@ -615,12 +627,15 @@ fieldset {
 .main_popular-list .brands-item,
 .catalog-item {
 	border: 1px solid #eaeaea;
-	margin-bottom: 20px;
 }
 
-.main_popular-list .brands-item:not(:nth-child(4)),
-.catalog-item:not(:nth-child(4)) {
+.main_popular-list .brands-item:not(:nth-child(4n)),
+.main_popular-list .catalog-item:not(:nth-child(4)) {
 	margin-right: 20px;
+}
+
+.main_popular-list .catalog-item {
+	margin-bottom: 20px;
 }
 
 .main_popular-list .brands-item:hover,
@@ -787,6 +802,12 @@ fieldset {
 }
 
 .main_service {
+	background-color: #f4f7f9;
+	padding-top: 66px;
+}
+
+.main_service .container {
+	position: relative;
 }
 
 .main_service-title,
@@ -795,6 +816,8 @@ fieldset {
 	line-height: 30px;
 	text-transform: uppercase;
 	font-weight: normal;
+
+	margin-top: 0;
 }
 
 .main_service-slide p,
@@ -806,13 +829,22 @@ fieldset {
 	color: #000000;
 }
 
+.main_service-slider {
+	display: flex;
+
+	margin-top: 67px;
+	padding-bottom: 99px;
+}
+
 .main_service-list {
 	list-style: none;
-
-	background-color: #f4f7f9;
 }
 
 .main_service-stripe{
+	position: absolute;
+	top: 126px;
+	left: 240px;
+
 	width: 10px;
 	height: 280px;
 	background-image: url("../img/slider-stripe.png");
@@ -820,6 +852,8 @@ fieldset {
 }
 
 .main_service-label {
+	display: block;
+
     color: #ffffff;
     font-size: 21px;
     line-height: 30px;
@@ -827,20 +861,46 @@ fieldset {
 
 	background-color: #32425c;
 	box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+
+	width: 240px;
+	padding-left: 23px;
+	padding-top: 16px;
+	padding-bottom: 18px;
+	margin-bottom: 1px;
 }
 
 .main_service-label:hover {
 	background-color: #293449;
 }
 
-.main_service-label:active {
+.main_service-label:active,
+#delivery-slide:checked ~ .main_service-buttons .delivery-label,
+#guarantee-slide:checked ~ .main_service-buttons .guarantee-label,
+#loan-slide:checked ~ .main_service-buttons .loan-label {
 	background-color: #ffffff;
 	color: #32425c;
 	box-shadow: 0px 1px 0 0 #ffffff, inset 0.6px 0.8px 0 0 #ffffff;
 }
 
-.main_service-list-item input {
+.main_service input {
 	display: none;
+}
+
+.main_service-slide {
+    display: none; 
+	margin-left: 80px;
+}
+
+#delivery-slide:checked ~ .main_service-list .main_service-slide:nth-of-type(1),
+#guarantee-slide:checked ~ .main_service-list .main_service-slide:nth-of-type(2),
+#loan-slide:checked ~ .main_service-list .main_service-slide:nth-of-type(3) {
+	display: block;
+}
+
+.main_service-slide img {
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 
 .main_service-slide h3 {
@@ -848,6 +908,27 @@ fieldset {
     font-size: 36px;
     line-height: 36px;
     text-transform: uppercase;
+    font-weight: normal;
+
+    margin-top: -2px;
+    margin-bottom: 30px;
+}
+
+.main_service-slide p {
+	margin-bottom: 27px;
+}
+
+.main_service-slide:nth-of-type(1) p {
+	width: 275px;
+} 
+
+.main_service-slide:nth-of-type(2) p {
+	width: 380px;
+}
+
+.main_service-slide:nth-of-type(3) .button{
+	width: 195px;
+	background-color: #ff5357;
 }
 
 .main_information {

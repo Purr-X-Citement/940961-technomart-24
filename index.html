@@ -74,8 +74,8 @@
         </nav>
     </header>
 
-    <main class="container">
-      <div class="main_products-menu">
+    <main>
+      <div class="main_products-menu container">
           <div class="main_products-menu_item products-menu_materials">
               <h3 class="main_products-menu_item-title">Материалы</h3>
               <img src="img/icon-1.svg" width="44" height="65" alt="Материалы">
@@ -127,7 +127,7 @@
           </div>
       </div>
 
-      <section class="main_popular-products">
+      <section class="main_popular-products container">
         <div class="main-popular-top">
           <h2 class="main-popular-title">Популярные товары:</h2>
           <a class="button" href="#" title="">Все популярные товары</a>
@@ -184,7 +184,7 @@
         </ul>
       </section>
 
-      <section class="main_popular-brands">
+      <section class="main_popular-brands container">
         <div class="main-popular-top">
           <h2 class="main-popular-title">Популярные производители:</h2>
           <a class="button" href="#" title="Все производители">Все производители</a>
@@ -236,44 +236,43 @@
       <section class="main_service">
         <div class="container">
           <h2 class="main_service-title">Сервисы</h2>
-          <p class="main_service-description">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-          <ul class="main_service-list">
-            <div class="main_service-stripe"></div>
-              <li class="main_service-list-item">
-                  <input type="radio" name="slider2" id="delivery-slide">
-                  <label for="delivery-slide" class="main_service-label">Доставка</label>
-                  <div class="main_service-slide">
+          <p class="main_service-description">Хороший интернет-магазин отличается от плохого не только ценами! <br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+              <div class="main_service-slider">
+                <input type="radio" name="slider2" class="main_service-radio" id="delivery-slide" checked>
+                <input type="radio" name="slider2" class="main_service-radio" id="guarantee-slide">
+                <input type="radio" name="slider2" class="main_service-radio" id="loan-slide">
+                <div class="main_service-buttons">
+                    <label for="delivery-slide" class="main_service-label delivery-label">Доставка</label>
+                    <label for="guarantee-slide" class="main_service-label guarantee-label">Гарантия</label>
+                    <label for="loan-slide" class="main_service-label loan-label">Кредит</label>
+                </div>
+                <div class="main_service-stripe"></div>
+                <ul class="main_service-list">
+                <li class="main_service-slide">
                     <h3>Доставка</h3>
                     <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
                       <br>Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
                     <img src="img/delivery.png" width="468" height="261" alt="Доставка">
-                  </div>
               </li>
-              <li class="main_service-list-item">
-                  <input type="radio" name="slider2" id="guarantee-slide">
-                  <label for="guarantee-slide" class="main_service-label">Гарантия</label>
-                  <div class="main_service-slide">
+              <li class="main_service-slide">
                     <h3>Гарантия</h3>
                     <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
                       <br>Дом уж восстановите как-нибудь сами.</p>
                     <img src="img/guarantee.png" width="389" height="283" alt="Гарантия">
-                  </div>
               </li>
-              <li class="main_service-list-item">
-                  <input type="radio" name="slider2" id="loan-slide">
-                  <label for="loan-slide" class="main_service-label">Кредит</label>
-                  <div class="main_service-slide">
+              <li class="main_service-slide">
                     <h3>Кредит</h3>
                     <p>Залезть в долговую яму стало проще! 
                       <br>Кредитные консультанты придут вам на помощь.</p>
+                    <a class="button" href="#" title="Отправить заявку">Отправить заявку</a>
                     <img src="img/loan.png" width="465" height="285" alt="Кредит">
-                  </div>
               </li>
           </ul>
         </div>
+        </div>
       </section>
 
-      <section class="main_information">
+      <section class="main_information container">
     	  <div class="main-about-us">
     		  <h2 class="main_information-title">Компания «Техномарт»</h2>
     		  <p class="main_information-paragraph">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
