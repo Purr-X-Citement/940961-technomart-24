@@ -78,8 +78,10 @@ fieldset {
 	background-color: #ee3643;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
 	background-color: #ca2c37;
+	outline: none;
 }
 
 .button:active {
@@ -151,7 +153,7 @@ fieldset {
 }
 
 .header__user-button-text {
-	padding-left: 17px;
+	padding-left: 14px;
 }
 
 .header__search-form {
@@ -230,6 +232,7 @@ fieldset {
 
 .header__order-button {
 	background-color: #63a63e;
+	margin-left: 7px;
 }
 
 .header__order-button:hover,
@@ -253,8 +256,6 @@ fieldset {
 	padding-right: 55px;
 	padding-top: 13px;
 	padding-bottom: 11px;
-
-    width: 220px;
 }
 
 .logo:hover,
@@ -272,9 +273,9 @@ fieldset {
 	align-items: center;
 	justify-content: space-between;
 
-	padding-top: 46px;
-	padding-bottom: 43px;
-	padding-left: 53px;
+	padding-top: 38px;
+	padding-bottom: 30px;
+	padding-left: 63px;
 }
 
 .header_shop-main-title {
@@ -284,27 +285,35 @@ fieldset {
     font-weight: normal;
     color: #ee3643;
 
-    width: 196px;
+    width: 200px;
 }
 
 .header_adress-tel-number {
 	display: block;
 	font-size: 21px;
-	line-height: 21px;
+	line-height: 22px;
 	color: #e9292a;
 	text-align: center;
 	border: 3px solid #ffffff;
-	padding: 13px 49px 11px 71px;
+	padding: 9px 49px 9px 71px;
 
 	background-image: url(../img/icon-phone.svg);
 	background-repeat: no-repeat;
-	background-position: 15px 13px;
+	background-position: 13px 11px;
 }
 
 .header_adress-adress {
 	font-size: 14px;
 	line-height: 24px;
 	color: #32425c;
+	margin: 0;
+	margin-top: 3px;
+	text-align: center;
+}
+
+.header-login-buttons {
+	display: flex;
+	margin-top: -28px;
 }
 
 .sign-in-button,
@@ -315,14 +324,14 @@ fieldset {
 
 	color: #000000;
 	font-size: 21px;
-	line-height: 21px;
+	line-height: 22px;
 	background-color: #ffffff;
 }
 
 .sign-in-button{
     margin-right: 10px;
-    padding-left: 14px;
-    padding-right: 27px;
+    padding-left: 16px;
+    padding-right: 24px;
 }
 
 .sign-in-button svg {
@@ -352,6 +361,10 @@ fieldset {
 .sign-in-button:active polygon,
 .sign-in-button:active path {
 	fill: #c5c5c5;
+}
+
+.header_user-info {
+	margin-top: 28px;
 }
 
 .header_profile-button {
@@ -450,7 +463,7 @@ fieldset {
 
 .main-nav {
 	font-size: 17px;
-	line-height: 17px;
+	line-height: 18px;
 }
 
 .main-nav_list {
@@ -466,7 +479,10 @@ fieldset {
 
 .main-nav__list-item-link {
 	display: block;
-	padding: 22px 30px;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 17px;
 
 	color: #ffffff;
 	text-align: center;
@@ -559,7 +575,7 @@ fieldset {
 .main_products-menu_slider h3 {
 	color: #ffffff;
 	font-size: 36px;
-	line-height: 36px;
+	line-height: 37px;
 	font-weight: bold;
 }
 
@@ -588,7 +604,7 @@ fieldset {
 
 .main-popular-top h2 {
 	font-size: 30px;
-	line-height: 30px;
+	line-height: 31px;
 	color: #32425c;
 	font-weight: normal;
     text-transform: uppercase;
@@ -598,11 +614,11 @@ fieldset {
 
 .main-popular-top .button {
     width: 253px;
-    text-align: center;
 }
 
 .main_popular-list {
 	display: flex;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	list-style: none;
 }
@@ -627,11 +643,6 @@ fieldset {
 .main_popular-list .brands-item,
 .catalog-item {
 	border: 1px solid #eaeaea;
-}
-
-.main_popular-list .brands-item:not(:nth-child(4n)),
-.main_popular-list .catalog-item:not(:nth-child(4)) {
-	margin-right: 20px;
 }
 
 .main_popular-list .catalog-item {
@@ -813,7 +824,7 @@ fieldset {
 .main_service-title,
 .main_information-title {
 	font-size: 30px;
-	line-height: 30px;
+	line-height: 31px;
 	text-transform: uppercase;
 	font-weight: normal;
 
@@ -864,12 +875,13 @@ fieldset {
 
 	width: 240px;
 	padding-left: 23px;
-	padding-top: 16px;
-	padding-bottom: 18px;
+	padding-top: 14px;
+	padding-bottom: 16px;
 	margin-bottom: 1px;
 }
 
-.main_service-label:hover {
+.main_service-label:hover,
+.main_service-label:focus {
 	background-color: #293449;
 }
 
@@ -906,7 +918,7 @@ fieldset {
 .main_service-slide h3 {
 	color: #32425c;
     font-size: 36px;
-    line-height: 36px;
+    line-height: 37px;
     text-transform: uppercase;
     font-weight: normal;
 
@@ -934,8 +946,8 @@ fieldset {
 .main_information {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 82px;
-	padding-bottom: 86px;
+	padding-top: 79px;
+	padding-bottom: 84px;
 }
 
 .main-about-us {
@@ -943,11 +955,12 @@ fieldset {
 }
 
 .main-about-us .main_information-paragraph {
-	margin-bottom: 20px;
+	margin-bottom: 24px;
 }
 
 .main_our-partners-list {
 	list-style: none;
+	margin-top: -4px;
 }
 
 .main_our-partners-item {
@@ -974,6 +987,7 @@ fieldset {
 
 .main-about-us .button {
 	width: 220px;
+	margin-top: 19px;
 }
 
 .main-contacts {
@@ -984,8 +998,12 @@ fieldset {
 	margin-bottom: 30px;
 }
 
+.main_information-map-small {
+	display: block;
+}
+
 .main_information-map-small + .button{
-	margin-top: 40px;
+	margin-top: 35px;
 }
 
 .main-contacts .button {
@@ -1044,7 +1062,7 @@ fieldset {
 
 .page-title {
 	font-size: 30px;
-	line-height: 30px;
+	line-height: 31px;
 	color: #32425c;
 	text-transform: uppercase;
 	font-weight: normal;
@@ -1351,6 +1369,7 @@ legend.catalog-filter_section-title::before {
 }
 
 .pagination-item a{
+	display: block;
 	padding: 10px 16px;
 	border-radius: 3px;
 	margin-right: 10px;
@@ -1368,7 +1387,7 @@ legend.catalog-filter_section-title::before {
 
 .main_perforator-article-title {
 	font-size: 30px;
-	line-height: 30px;
+	line-height: 31px;
 	font-weight: normal;
 	color: #000000;
 
@@ -1400,7 +1419,7 @@ legend.catalog-filter_section-title::before {
 
 .footer-top {
     background-color: #32425c;
-    padding-bottom: 30px;
+    padding-bottom: 48px;
 }
 
 .flex-container {
@@ -1425,8 +1444,10 @@ legend.catalog-filter_section-title::before {
 	color: white;
 }
 
-.footer-nav a:hover {
+.footer-nav a:hover,
+.footer-nav-link:focus {
 	text-decoration: underline;
+	outline: none;
 }
 
 .footer-nav a:active {
@@ -1454,6 +1475,10 @@ legend.catalog-filter_section-title::before {
 	padding-right: 0;
 }
 
+.footer-adress {
+	padding-left: 3px;
+}
+
 .footer-adress,
  .footer-adress a{
 	font-size: 18px;
@@ -1477,7 +1502,7 @@ legend.catalog-filter_section-title::before {
 	display: flex;
 	align-items: center;
 
-	padding-top: 35px;
+	padding-top: 21px;
 	padding-bottom: 30px;
 }
 
@@ -1514,14 +1539,17 @@ legend.catalog-filter_section-title::before {
 .social-button:focus,
 .social-button:active {
 	background-color: #ee3643;
+	outline: none;
 }
 
 .footer-bottom_academy-link {
 	display: block;
 }
 
-.footer-bottom_academy-link:hover {
+.footer-bottom_academy-link:hover,
+.footer-bottom_academy-link:focus {
     text-decoration: underline;
+    outline: none;
 }
 
 .footer-bottom_academy-link:active {
@@ -1579,7 +1607,7 @@ legend.catalog-filter_section-title::before {
 	display: block;
 
 	font-size: 18px;
-	line-height: 18px;
+	line-height: 19px;
 	color: #000000;
 
 	padding-bottom: 13px;
@@ -1682,7 +1710,7 @@ legend.catalog-filter_section-title::before {
 
 .modal-cart-text {
 	font-size: 30px;
-	line-height: 30px;
+	line-height: 31px;
 	padding-left: 32px; 
 }
 
