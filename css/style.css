@@ -116,7 +116,6 @@ fieldset {
 	align-items: center;
 
 	padding-bottom: 60px;
-	margin-bottom: 59px;
 
 	background-color: #f4f7f9;
 }
@@ -1013,6 +1012,7 @@ fieldset {
 .breadcrumbs {
 	display: flex;
 	list-style: none;
+	padding-top: 23px;
 }
 
 .breadcrumbs__item {
