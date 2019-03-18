@@ -1706,7 +1706,6 @@ legend.catalog-filter_section-title::before {
 }
 
 .modal-container {
-	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -1714,7 +1713,7 @@ legend.catalog-filter_section-title::before {
 
 	width: 100%;
 	height: 100%;
-	background-color: rgba(225, 0, 0, 0.3); 
+	/* background-color: rgba(225, 0, 0, 0.3); */
 }
 
 .modal {
@@ -1731,6 +1730,20 @@ legend.catalog-filter_section-title::before {
 
 	border-top: 7px solid #ee3643;
 	box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.modal-container-mail {
+	display: none;
+}
+.modal-container-map {
+	display: none;
+}
+.modal-container-cart {
+	display: none;
+}
+
+.modal-show {
+	display: block;
 }
 
 .form-block-line {
